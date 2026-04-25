@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Finborn</title>
+  <link rel="icon" type="image/png" href="assets/finborn.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #16191E;
+      --primary: #596b78;
+      --text: #f2f7ff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: "Onest", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding-top: 12vh;
+      text-align: center;
+      min-height: 100vh;
+    }
+
+    .logo {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      color: var(--primary);
+      font-size: 3rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      margin-bottom: 2rem;
+    }
+
+    .message {
+      font-size: 1.125rem;
+      line-height: 1.7;
+      max-width: 32rem;
+      padding: 0 1.5rem;
+    }
+
+    .message p + p {
+      margin-top: 0.5rem;
+    }
+
+    .signature {
+      color: var(--primary);
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+  <img src="assets/finborn.png" alt="Finborn" class="logo" />
+  <h1>Finborn</h1>
+  <div class="message">
+    <p>Estamos haciendo arreglos y volvemos!</p>
+    <p class="signature">Finborn</p>
+  </div>
+</body>
+</html>
